@@ -3,6 +3,10 @@ workflows:
     name: Native Android
     max_build_duration: 120
     instance_type: mac_mini_m1
+    cache:
+      cache_paths:
+        - ~/.gradle/caches
+        - $HOME/.gradle/caches	
     scripts:
       - name: View Machine Configuration
         script: |
